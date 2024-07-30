@@ -1,0 +1,280 @@
+/* RESETS */
+
+:root {
+    --main-color: #d5d6cd;
+    --main-color-two: #ffffff;
+    --text-color: #000000;
+    --highlight-color: #e9b601;
+    --accent-color: #efede7;
+    --sub-text-color: #666666;
+    --box-shadow: rgb(192, 186, 186);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-color);
+}
+
+/* BLOCK */
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+    background-color: var(--main-color-two);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+/* ELEMENTS */
+
+/* Header */
+.header__item__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    font-size: 1.5rem;
+}
+
+.checkout__container {
+    margin-left: 3rem;
+    width: 3rem;
+}
+
+.shopping__item__quantity {
+    right: 1rem;
+    padding: 7px 3.5px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.8rem;
+    background-color: var(--highlight-color);
+}
+
+.logo__text {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.menu__btn {
+    margin-right: 3rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Hero */
+.hero__img__section {
+    width: 13rem;
+    height: 100%;
+}
+
+.hero__img__section__one {
+    margin-left: 30px;
+}
+
+.hero__img {
+    position: relative;
+    width: 90%;
+    height: auto;
+    box-shadow: 5px 5px 18px var(--sub-text-color), -5px -5px 18px var(--sub-text-color);
+}
+
+.hero__text {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.hero__img__one, .hero__img__four {
+    top: -1.8rem;
+}
+
+.hero__img__two {
+    top: -10rem;
+    right: -11rem;
+}
+
+.hero__img__three {
+    top: -14rem;
+    right: -4rem;
+}
+
+.hero__img__section__two {
+    margin-right: 30px;
+}
+
+.hero__img__four {
+    z-index: 1;
+}
+
+.hero__img__five {
+    top: -5.5rem;
+    left: -8rem;
+}
+
+.hero__img__six {
+    width: 100%;
+    top: -6.5rem;
+    left: -4.5rem;
+}
+
+/* Features */
+.page__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
+.intro__text {
+    width: fit-content;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--sub-text-color);
+    background-color: var(--box-shadow);
+}
+
+.info__pitch {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+
+.subtitle__info {
+    font-size: 1.2rem;
+}
+
+.page__img__container {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page__img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Products */
+.product__column {
+    display: flex;
+    flex-direction: column;
+    /* change this width to fit */
+    width: 60%;
+    height: auto;
+}
+
+.product__column__one {
+    grid-column: 1;
+}
+
+.product__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.product__description {
+    font-size: 1.1rem;
+}
+
+.prodcut__column__two {
+    grid-column: 2;
+}
+
+/* Footer */
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    margin-right: 40px;
+}
+
+.footer__icon__item {
+    width: auto;
+    height: 20px;
+}
+
+/* MODIFIERS */
+
+/* Header */
+.cart--icon {
+    width: 50%;
+    height: 50%;
+}
+
+.copr--text {
+    font-size: 40%;
+}
+
+.superscript--text {
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -1.2em;
+}
+
+/* Features */
+.text--bottom--spacing {
+    margin-bottom: 2rem;
+}
